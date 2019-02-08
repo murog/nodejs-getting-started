@@ -1,15 +1,8 @@
 var expect = require('chai').expect;
 const chai = require('chai');
 const chaiHttp = require('chai-http');
-const app = require('./app.js')
 
 chai.use(chaiHttp);
-
-describe('simple', function() {
-    it('should work!', function() {
-        expect(true).to.be.true;
-    });
-});
 
 describe('hello world', function() {
     it('should load', function(done) {
